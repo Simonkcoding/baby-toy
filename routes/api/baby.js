@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const babycontroller = require('../../controllers/babycontroller');
+const babycontroller = require('../../controllers/babyController');
 
 // .../api/baby/
 router.route("/")
