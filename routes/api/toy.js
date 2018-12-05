@@ -1,24 +1,24 @@
 const router = require('express').Router();
-const toyController = require('../../controllers/toyController');
+const toycontroller = require('../../controllers/toycontroller');
 
 // .../api/toy/
 router.route("/")
-    .get(toyController.findAll) //get all info
-    .post(toyController.create); //add entry
+    .get(toycontroller.findAll) //get all info
+    .post(toycontroller.create); //add entry
 
 // .../api/toy/id
 router.route("/:id")
-    .get(toyController.findById) // FIND with id
-    .put(toyController.update) // change info
-    .delete(toyController.delete); // delete entry
+    .get(toycontroller.findById) // FIND with id
+    .put(toycontroller.update) // change info
+    .delete(toycontroller.delete); // delete entry
 
 router.route('/sendtoy')
-    .put(toyController.insertBaby)
+    .put(toycontroller.insertBaby)
 
 router.route("/add/:id")
-    .put(toyController.addInterest)
+    .put(toycontroller.addInterest)
 
 router.route("/remove/:id")
-    .put(toyController.removeInterest)
+    .put(toycontroller.removeInterest)
 
 module.exports = router;

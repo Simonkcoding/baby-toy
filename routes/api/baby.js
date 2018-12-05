@@ -1,27 +1,27 @@
 const router = require('express').Router();
-const babyController = require('../../controllers/babyController');
+const babycontroller = require('../../controllers/babycontroller');
 
 // .../api/baby/
 router.route("/")
-    .get(babyController.findAll) //get all info
-    .post(babyController.create); //add entry
+    .get(babycontroller.findAll) //get all info
+    .post(babycontroller.create); //add entry
 
 // .../api/baby/id
 router.route("/:id")
     // .get(babyController.findById) // FIND with id
     // .put(babyController.update) // change info
-    .delete(babyController.delete); // delete entry
+    .delete(babycontroller.delete); // delete entry
 
 router.route("/:name")
-    .get(babyController.findByName) // FIND with id
+    .get(babycontroller.findByName) // FIND with id
 
 router.route('/sendtoy')
-    .put(babyController.insertToy)
+    .put(babycontroller.insertToy)
 
 router.route("/add/:id")
-    .put(babyController.addInterest)
+    .put(babycontroller.addInterest)
 
 router.route("/remove/:id")
-    .put(babyController.removeInterest)
+    .put(babycontroller.removeInterest)
 
 module.exports = router;

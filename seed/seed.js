@@ -5,7 +5,7 @@ const db = require("../models");
 
 mongoose.connect(
     process.env.MONGODB_URI ||
-    "mongodb://localhost/babytoy"
+    "mongodb://simon:a753e358@ds031417.mlab.com:31417/baby-toy"
 );
 
 const ToySeed = [
@@ -80,21 +80,9 @@ const BabySeed = [
     }
 ];
 
-// db.Toy
-//     .remove({})
-//     .then(() => db.Toy.collection.insertMany(ToySeed))
-//     .then(data => {
-//         console.log(data.result.n + " records inserted!");
-//         process.exit(0);
-//     })
-//     .catch(err => {
-//         console.error(err);
-//         process.exit(1);
-//     });
-
-db.Baby
+db.Toy
     .remove({})
-    .then(() => db.Baby.collection.insertMany(BabySeed))
+    .then(() => db.Toy.collection.insertMany(ToySeed))
     .then(data => {
         console.log(data.result.n + " records inserted!");
         process.exit(0);
@@ -103,4 +91,16 @@ db.Baby
         console.error(err);
         process.exit(1);
     });
+
+// db.Baby
+//     .remove({})
+//     .then(() => db.Baby.collection.insertMany(BabySeed))
+//     .then(data => {
+//         console.log(data.result.n + " records inserted!");
+//         process.exit(0);
+//     })
+//     .catch(err => {
+//         console.error(err);
+//         process.exit(1);
+//     });
 
