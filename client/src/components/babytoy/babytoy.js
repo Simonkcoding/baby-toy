@@ -118,6 +118,7 @@ export default class babytoy extends Component {
                                     <Babybox
                                         baby={this.state.singleBaby}
                                         delete={(id) => this.deleteHandler(id)}
+                                        deletethumbnail={(id)=> this.deletethumbnailHandler(id)}
                                     />
                                 )}
                         </div>

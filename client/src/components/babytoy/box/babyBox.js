@@ -20,7 +20,9 @@ export default function babyBox(props) {
                     <p>no toys for this baby yet</p>
                 ): (props.baby.toy.map(toy => (
                         <div className='mini-toy' key={toy.name}>
-                            <img src={toy.imgurl} width='50px' height='50px' />
+                            <img src={toy.imgurl} width='50px' height='50px' 
+                            // onClick={()=>props.deletethumbnail(props.baby._id)}
+                            />
                         </div>
                     )))}
             </div>
