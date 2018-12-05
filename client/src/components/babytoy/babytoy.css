@@ -1,0 +1,89 @@
+#wrapper{
+    width:70vw;
+    margin:auto;
+    padding:15px;
+    background-color: white;
+    border: solid grey 2px;
+    border-radius:1%;
+    overflow: auto;
+    margin-bottom:10px;
+}
+.big-card-div{
+    border: solid grey 1px;
+    border-radius: 5px;;
+    padding:5px;
+    margin:5px;
+    text-align: center;
+}
+
+.baby-find-form,
+.baby-add-form{
+    width:30%;
+}
+
+.baby-find-show,
+.baby-add-show{
+width:65%
+}
+.baby-add-show{
+    overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+.card-div{
+    width:200px;
+    display: inline-block;
+    border: solid grey 1px;
+    border-radius: 5%;
+    padding:5px;
+    margin:5px;
+    text-align: center;
+}
+.row{
+    margin:auto;
+}
+
+input{
+    margin:5px;
+    }
+    
+/* .toy-div{
+    display:inline-block;
+} */
+
+/* .baby-div{
+    padding:5px;
+   clear: both;
+   
+}
+.toy-div{
+    padding:5px;
+   clear: both;
+}
+.img-div{
+    width:150px;
+    height:120px;
+    overflow: hidden;
+    float: left;
+}
+
+input{
+margin:5px;
+}
+
+.baby-ctrl{  
+    text-align:right;
+}
+
+.baby-id{
+    padding:5px;
+    border-radius:10%;
+    width:100%;
+    text-align: center;
+    overflow: auto;
+    
+}
+
+.baby-info{
+    margin:auto !important;
+} */
