@@ -26,6 +26,7 @@ module.exports = {
             .then(Babys => res.json(Babys))
             .catch(err => console.log(err));
     },
+    
     create: function (req, res) {
         const newBaby = new Baby({
             name: req.body.name,
